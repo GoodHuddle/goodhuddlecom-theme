@@ -1,0 +1,152 @@
+iframe {
+    border: none;
+}
+
+.gap-top {
+    margin-top: 30px;
+}
+
+.signup-menu-item {
+    font-weight: bold;
+    color: #d29948;
+}
+
+.field-error,
+.field-error:focus,
+.field-error:hover {
+    border-color: #d30000;
+}
+
+.url-addon {
+    color: darkgrey;
+    border-color: #d29948;
+    background: none;
+    padding-right: 30px;
+}
+
+.info-section {
+    display: none;
+}
+
+.error-block {
+    color: #d30000;
+}
+
+.sun {
+    background: none;
+}
+
+
+.form-control::-webkit-input-placeholder { /* WebKit browsers */
+    color: #d3d3d3;
+}
+.form-control::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #d3d3d3;
+    opacity:  1;
+}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #d3d3d3;
+    opacity:  1;
+}
+.form-control::-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #d3d3d3;
+}
+
+.wow {
+    opacity: 0;
+}
+
+
+
+/* Home Intro */
+
+#home-intro {
+    background: url('/resources/lib/triangle-mono/images/home/slider-bg.png') 100px 100% repeat-x;
+    position: relative;
+}
+
+
+#home-intro .home-intro-content {
+    margin-top: 100px;
+    position: relative;
+    height: 450px;
+}
+
+#home-intro h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#home-intro .video-container {
+    margin-top: 80px;
+    margin-bottom: 25px;
+}
+
+.btn-signup {
+    /*width: 100%;*/
+    background-color: #d89b4e;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    /*letter-spacing: 5px;*/
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-top: 15px;
+    border-bottom: 3px solid #a56617;
+    box-shadow: none;
+    padding: 10px 40px;
+}
+
+.btn-signup:hover,
+.btn-signup:focus{
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+    opacity: .8;
+}
+
+.more-features-link {
+    padding: 40px;
+}
+
+
+/* Home features */
+
+#services .fa {
+    color: #c38d47;
+    font-size: 90px;
+    margin-bottom: 10px;
+}
+
+
+/* Sign up page */
+
+#huddle-name-info {
+    margin-top: 50px;
+}
+
+#huddle-url-info {
+    margin-top: 100px;
+}
+
+#invitation-code-info {
+    margin-top: 140px;
+}
+
+#username-info {
+    margin-top: 280px;
+}
+
+#email-info {
+    margin-top: 340px;
+}
+
+#password-info {
+    margin-top: 390px;
+}
+
+#confirm-password-info {
+    margin-top: 450px;
+}
+
+

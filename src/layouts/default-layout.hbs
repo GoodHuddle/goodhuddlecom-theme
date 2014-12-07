@@ -1,0 +1,178 @@
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <title>{{#section "title"}}{{huddle.name}}{{/section}}</title>
+
+    <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/resources/lib/font-awesome-4.2.0/css/font-awesome.min.css"
+
+    <link href="/resources/lib/triangle-mono/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/resources/lib/triangle-mono/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="/resources/lib/triangle-mono/css/animate.min.css" rel="stylesheet"/>
+    <link href="/resources/lib/triangle-mono/css/lightbox.css" rel="stylesheet"/>
+    <link href="/resources/lib/triangle-mono/css/main.css" rel="stylesheet"/>
+    <link href="/resources/lib/triangle-mono/css/responsive.css" rel="stylesheet"/>
+
+    <link href="/resources/css/styles.css" rel="stylesheet"/>
+
+    <!--[if lt IE 9]>
+    <script src="/resources/lib/triangle-mono/js/html5shiv.js"></script>
+    <script src="/resources/lib/triangle-mono/js/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/resources/images/fav/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="/resources/images/fav/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="/resources/images/fav/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="/resources/images/fav/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="/resources/images/fav/apple-touch-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="/resources/images/fav/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="/resources/images/fav/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="/resources/images/fav/apple-touch-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/fav/apple-touch-icon-180x180.png"/>
+    <link rel="icon" type="image/png" href="/resources/images/fav/favicon-192x192.png" sizes="192x192"/>
+    <link rel="icon" type="image/png" href="/resources/images/fav/favicon-160x160.png" sizes="160x160"/>
+    <link rel="icon" type="image/png" href="/resources/images/fav/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="/resources/images/fav/favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="/resources/images/fav/favicon-32x32.png" sizes="32x32"/>
+    <meta name="msapplication-TileColor" content="#e04e39"/>
+    <meta name="msapplication-TileImage" content="/resources/images/fav/mstile-144x144.png"/>
+
+    <meta name="google-site-verification" content="r1O_BLl6TaUDW5XrPP8G5tvT0PesyMMRIB5KGCY8kY0" />
+
+</head><!--/head-->
+
+<body>
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 overflow">
+                <div class="social-icons pull-right">
+                    <ul class="nav nav-pills">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-inverse" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="/">
+                    <h1><img src="/resources/images/logo.png" alt="logo"/></h1>
+                </a>
+
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    {{#each menu.items}}
+                        <li class="{{#if selected}}active{{/if}}">
+                            <a href="{{url}}">{{label}}</a>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+{{#section "main-body"}}
+    <div id="page-{{page.slug}}">
+        <section id="page-breadcrumb">
+            <div class="vertical-center sun">
+                <div class="container">
+                    <div class="row">
+                        <div class="action">
+                            <div class="col-sm-12">
+                                <h1 class="title">{{#section "breadcrumb-title"}}{{page.title}}{{/section}}</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                {{#section "content"}}No page content{{/section}}
+            </div>
+        </section>
+    </div>
+{{/section}}
+
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12 text-center bottom-separator">
+                <img src="/resources/lib/triangle-mono/images/home/under.png" class="img-responsive inline" alt=""/>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <h1 class="title">With a little help from our friends</h1>
+                </div>
+                <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="col-xs-offset-4 col-xs-3 col-sm-2">
+                        <a href="#"><img src="/resources/images/myer-foundation.gif" class="img-responsive" alt=""/></a>
+                    </div>
+                    <div class="col-xs-3 col-sm-2">
+                        <a href="#"><img src="/resources/images/sid-myer-fund.gif" class="img-responsive" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="copyright-text text-center">
+                    <p>&copy; GoodHuddle 2014. All Rights Reserved.</p>
+                    <!--<p>Designed by <a target="_blank" href="http://www.themeum.com">Themeum</a></p>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--/#footer-->
+
+{{#section "scripts"}}
+
+    <script type="text/javascript" src="/resources/lib/triangle-mono/js/jquery.js"></script>
+    <script type="text/javascript" src="/resources/lib/triangle-mono/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/resources/lib/triangle-mono/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="/resources/lib/triangle-mono/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/resources/lib/triangle-mono/js/holder.js"></script>
+    <script type="text/javascript" src="/resources/lib/triangle-mono/js/wow.min.js"></script>
+    <script type="text/javascript" src="/resources/lib/triangle-mono/js/main.js"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-53245477-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <script src="/lib/jquery-1.11.1/jquery-1.11.1.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+{{/section}}
+
+
+</body>
+</html>
