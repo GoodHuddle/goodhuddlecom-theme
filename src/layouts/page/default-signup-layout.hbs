@@ -1,0 +1,142 @@
+{{#extend "default-layout"}}
+
+    {{#prepend "title"}}Home - {{/prepend}}
+
+    {{#replace "breadcrumb-title"}}Start building your community today{{/replace}}
+
+    {{#replace "content"}}
+
+        <form id="signup-form" class="gap-top">
+
+            <div id="global-error" class="error-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="alert alert-danger">
+                                Please correct the errors below and try again
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="gap-top wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+
+                            <div class="bottom">
+                                <h2>Your community details</h2>
+                                <div class="form-group">
+                                    <input id="name" type="text" class="form-control signup-field" placeholder="Community name"
+                                           data-content="Your community name is used as the title for your website and on your mail-outs."/>
+                                    <p id="name-error" class="error-block">Incorrect huddle name</p>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon url-addon">www.</span>
+                                        <input id="slug" type="text" class="form-control signup-field" placeholder="Huddle URL"
+                                               data-content="Your URL is the web address for your site and how people find you online. To get you started we provide you with a URL at goodhuddle.com. Later you can add your own custom URL for your website if you prefer (e.g. http://yoursite.com)"/>
+                                        <span class="input-group-addon url-addon">.goodhuddle.com</span>
+                                    </div>
+                                    <p id="huddleUrl-error" class="error-block">Incorrect huddle URL</p>
+                                </div>
+                                <div class="form-group">
+                                    <input id="invitationCode" type="text" class="form-control signup-field" placeholder="Invitation code"
+                                           data-content="GoodHuddle is still being built, to make sure everything is working we're inviting early beta testers to try it out and give us feedback. If you would like to join our beta, please contact info@goodhuddle.com"/>
+                                    <p id="invitationCode-error" class="error-block">Incorrect invitation code</p>
+                                </div>
+                            </div>
+
+                            <div class="gap-top">
+                                <h2>Your contact details</h2>
+                                <div class="form-group">
+                                    <input id="adminFirstName" type="text" class="form-control signup-field"   placeholder="First name"/>
+                                    <p id="adminFirstName-error" class="error-block">Invalid first name</p>
+                                </div>
+                                <div class="form-group">
+                                    <input id="adminLastName" type="text" class="form-control signup-field"   placeholder="Last name"/>
+                                    <p id="adminLastName-error" class="error-block">Invalid last name</p>
+                                </div>
+                                <div class="form-group">
+                                    <input id="adminEmail" type="email" name="email" class="form-control signup-field"   placeholder="Email address"/>
+                                    <p id="adminEmail-error" class="error-block">Incorrect email</p>
+                                </div>
+                            </div>
+
+                            <div class="gap-top">
+                                <h2>Your preferred login details</h2>
+                                <div class="form-group">
+                                    <input id="adminUsername" type="text" class="form-control signup-field"   placeholder="Username"/>
+                                    <p id="adminUsername-error" class="error-block">Incorrect username</p>
+                                </div>
+                                <div class="form-group">
+                                    <input id="adminPassword" type="password" class="form-control signup-field"   placeholder="Password"/>
+                                    <p id="adminPassword-error" class="error-block">Incorrect password</p>
+                                </div>
+                                <div class="form-group">
+                                    <input id="confirmPassword" type="password" class="form-control signup-field"   placeholder="Confirm password"/>
+                                    <p id="confirmPassword-error" class="error-block">The passwords do not match</p>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input id="tandc" type="checkbox"/> I have read and accept the
+                                            <a href="#" data-toggle="modal" data-target="#tandcModal">GoodHuddle terms and conditions</a>.
+                                        </label>
+                                    </div>
+
+                                    <p id="tandc-error" class="error-block">
+                                        Please accept the GoodHuddle terms and conditions
+                                    </p>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <button id="sign-up-button" type="button" class="btn btn-submit">
+                                        Huddle up
+                                    </button>
+                                </div>
+
+                                <div id="loading-indicator" style="display:none">
+                                    <img src="/resources/images/loading.gif"> Creating huddle
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </form>
+
+        <!-- Show T&C Modal -->
+        <div class="modal fade" id="tandcModal" tabindex="-1" role="dialog" aria-labelledby="tandcModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="tandcModalLabel">Terms and Conditions</h4>
+                    </div>
+                    <div class="modal-body">
+                        T and C's
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {{/replace}}
+
+    {{#append "scripts"}}
+        <script type="text/javascript" src="/resources/js/signup.js"></script>
+    {{/append}}
+
+{{/extend}}
+
+
+

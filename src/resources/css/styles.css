@@ -29,6 +29,7 @@ iframe {
 }
 
 .error-block {
+    display: none;
     color: #d30000;
 }
 
@@ -120,6 +121,7 @@ iframe {
 
 
 /* Sign up page */
+
 
 #huddle-name-info {
     margin-top: 50px;
