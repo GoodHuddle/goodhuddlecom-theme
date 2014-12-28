@@ -133,7 +133,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: "POST",
-            url: '/_huddles/create.do',
+            url: '/huddles/create.do',
             data: JSON.stringify({
                 slug: slug,
                 name: name,
